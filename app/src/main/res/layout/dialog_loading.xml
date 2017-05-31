@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white_smoke"
+    android:gravity="center"
+    android:minHeight="150dp"
+    android:minWidth="150dp"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/dialog_loading_iv_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loading"
+        android:contentDescription="关于菜市街" />
+
+    <!--<TextView-->
+        android:id="@+id/dialog_loading_tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/view_spacing"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/default_text_size" />
+
+</LinearLayout>

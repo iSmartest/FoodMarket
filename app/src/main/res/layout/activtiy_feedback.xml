@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background">
+    <include layout="@layout/activity_base"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="反馈标题："
+            android:textColor="@color/black"
+            android:textSize="18dp"/>
+        <EditText
+            android:id="@+id/edi_feedback_title"
+            android:textSize="16dp"
+            android:textColorHint="@color/hint_text_color_default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:hint="请输入您要反馈意见的标题，如闪退"
+            android:background="@drawable/shape_text_edit"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="反馈描述："
+            android:textColor="@color/black"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/edit_feedback_dec"
+            style="@style/DefaultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white_smoke"
+            android:gravity="left|top"
+            android:hint="朋友，请输入您的反馈意见吧，么么哒1"
+            android:layout_weight="1"
+            android:maxLines="12"
+            android:minLines="4"
+            android:layout_marginLeft="8dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:textColorHint="@color/hint_text_color_default" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_feedback_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_btn_text"
+        android:layout_marginTop="30dp"
+        android:text="添加"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/black"/>
+</LinearLayout>

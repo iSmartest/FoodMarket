@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#030303</color>
+    <color name="white_smoke">#ffffff</color>
+    <color name="gray">#bbbbbb</color>
+    <color name="search_background">#eeeeee</color>
+    <color name="btn_login_color">#ff501e</color>
+    <color name="text_color_default">#2a2a2a</color>
+    <color name="hint_text_color_default">#d0d0d0</color>
+    <color name="transparent">#00000000</color>
+    <color name="divider_color">#e5e5e5</color>
+    <color name="color_background">#ebebeb</color>
+    <color name="red">#e51c23</color>
+    <color name="text_message">#f8b551</color>
+    <color name="text_invalid">#666666</color>
+</resources>

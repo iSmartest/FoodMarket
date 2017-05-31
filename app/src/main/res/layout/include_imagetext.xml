@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp">
+        <ImageView
+            android:id="@+id/include_imagetext_view_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:duplicateParentState="true"
+            android:scaleType="fitCenter"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:id="@+id/include_imagetext_textview_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:gravity="center"
+            android:textColor="@color/white_smoke"
+            android:visibility="invisible" />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/include_imagetext_textview_text"
+        style="@style/DefaultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/s_text_click"
+        android:textSize="14sp"
+        android:maxEms="4"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+
+</LinearLayout>

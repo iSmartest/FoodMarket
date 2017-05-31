@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/include_shop_dec"/>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white_smoke"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/text_shop_dec_buy_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_btn_text"
+            android:layout_weight="1"
+            android:text="立即购买"
+            android:gravity="center"
+            android:textColor="@color/white_smoke"
+            android:textSize="18sp"
+            android:layout_marginRight="8dp"/>
+        <TextView
+            android:id="@+id/text_shop_dec_add_shopping_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_btn_text"
+            android:layout_weight="1"
+            android:text="加入购物车"
+            android:gravity="center"
+            android:textColor="@color/white_smoke"
+            android:textSize="18sp"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+</RelativeLayout>

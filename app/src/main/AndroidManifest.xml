@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lixin.foodmarket">
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+
+    <application
+        android:name=".activity.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ClassListActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        //商品详情
+        <activity android:name=".activity.ShopDecActivity"/>
+        //立即购买
+        <activity android:name=".activity.NowBuyActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        //我的收货地址
+        <activity android:name=".activity.MyAddressActivity"/>
+        //添加收货地址
+        <activity android:name=".activity.AddAddressActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        //我的优惠券
+        <activity android:name=".activity.MyCouponActivity"/>
+        //我的钱包
+        <activity android:name=".activity.MyWalletActivity"/>
+        //零钱明细
+        <activity android:name=".activity.MoneyDecActivity"/>
+        //我的订单
+        <activity android:name=".activity.MyAllOrderActivity"/>
+        //我的收藏
+        <activity android:name=".activity.MyCollectionActivity"/>
+        //我的分享
+        <activity android:name=".activity.MyShareActivity"/>
+        //设置
+        <activity android:name=".activity.MySettingActivity"/>
+        //意见反馈
+        <activity android:name=".activity.FeedbackActivity"/>
+        //消息
+        <activity android:name=".activity.MyMessageActivity"/>
+        //个人信息
+        <activity android:name=".activity.MyPersonalInformationActivity"/>
+        //修改昵称
+        <activity android:name=".activity.ModifyNameActivity"/>
+        //更多商品
+        <activity android:name=".activity.MoreShopActivity"/>
+        //我要退款
+        <activity android:name=".activity.RefundDecActivity"/>
+        //订单详情
+        <activity android:name=".activity.OrderDecActivity"/>
+        //配送信息详情
+        <activity android:name=".activity.DistributionInformationDecActivity"/>
+        //登录
+        <activity android:name=".activity.LoginActivity"/>
+        //注册
+        <activity android:name=".activity.RegisterActivity"/>
+        //找回密码
+        <activity android:name=".activity.ForgetPwdActivity"/>
+        //活动详情
+        <activity android:name=".activity.EventDetailsWebActivity"/>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5915665d65b6d612ef000aa5" >
+        </meta-data>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.View" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1106112021" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+    </application>
+
+</manifest>
